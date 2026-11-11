@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침</title>
+<style>
+  :root { --fg:#1b2430; --muted:#5b6675; --bg:#ffffff; --accent:#1a4e8a; --line:#dde3ea; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e8edf3; --muted:#a8b3c0; --bg:#11161c; --accent:#7fb0ef; --line:#2a333d; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:26px; margin:0 0 4px; } h2 { margin-top:28px; font-size:18px; }
+  .muted { color:var(--muted); } a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; } td, th { border-top:1px solid var(--line); padding:8px 6px; text-align:left; vertical-align:top; }
+</style>
+</head>
+<body>
+<main>
+  <h1>개인정보처리방침</h1>
+  <div class="muted">S26 녹음 백업 · 시행일 2026-11-11</div>
+
+  <h2>1. 처리하는 정보</h2>
+  <table>
+    <tr><th>정보</th><th>용도</th><th>보관 위치</th></tr>
+    <tr><td>휴대폰의 통화 녹음·음성 녹음 파일</td><td>사용자의 Google 드라이브에 백업</td><td>사용자 본인의 Google 드라이브</td></tr>
+    <tr><td>녹음 메타데이터(원래 파일명, 녹음 시각, 크기, 길이, 체크섬)</td><td>폴더 정리, 중복 방지, 재설치 후 복구</td><td>휴대폰의 앱 전용 저장소, 사용자 드라이브의 정보 파일</td></tr>
+    <tr><td>Google 계정 식별 정보(이메일, Drive 사용자 ID)</td><td>백업 위치 확인</td><td>휴대폰의 앱 전용 저장소</td></tr>
+  </table>
+  <p>통화 녹음의 원래 파일명에는 상대방의 연락처 이름이나 전화번호가 포함될 수 있습니다. 이 정보는 사용자 본인의 드라이브에 있는 정보 파일에만 보존하며, 드라이브에 올리는 녹음 파일 이름과 앱 로그에는 넣지 않습니다.</p>
+
+  <h2>2. 전송과 제3자 제공</h2>
+  <p>이 앱에는 별도 서버가 없습니다. 모든 데이터는 휴대폰에서 Google 드라이브 API를 통해 사용자 본인의 드라이브로 직접 전송됩니다. 개발자는 사용자의 녹음이나 정보를 받지 않으며 제3자에게 제공하거나 판매하지 않습니다. 광고·분석 도구를 사용하지 않습니다.</p>
+
+  <h2>3. Google 사용자 데이터</h2>
+  <p>이 앱은 <code>https://www.googleapis.com/auth/drive.file</code> 권한만 요청합니다. 이 권한으로는 이 앱이 만든 폴더와 파일만 생성·조회·수정할 수 있고, 사용자의 다른 드라이브 파일에는 접근할 수 없습니다. Google API에서 받은 정보의 사용과 다른 앱으로의 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services 사용자 데이터 정책</a>의 제한적 사용(Limited Use) 요건을 따릅니다.</p>
+  <p>인증 토큰은 휴대폰의 Google Play 서비스가 관리하며, 앱은 토큰을 파일이나 백업에 저장하지 않습니다.</p>
+
+  <h2>4. 보관과 삭제</h2>
+  <ul>
+    <li>앱을 삭제하면 휴대폰의 백업 기록이 삭제됩니다. 드라이브에 백업된 파일은 사용자가 직접 지울 때까지 남습니다.</li>
+    <li>휴대폰에서 녹음을 지워도 드라이브의 백업은 지우지 않습니다. 드라이브에서 지운 파일을 앱이 자동으로 다시 만들지 않습니다.</li>
+    <li>드라이브 접근 권한은 <a href="https://myaccount.google.com/permissions">Google 계정의 서드 파티 연결</a>에서 언제든 해제할 수 있습니다.</li>
+  </ul>
+
+  <h2>5. 문의</h2>
+  <p>이 앱은 개인용으로 만들어졌습니다. 문의는 Google 동의 화면에 표시된 지원 이메일로 해 주세요.</p>
+
+  <p class="muted">Privacy summary: This app uploads the user's own recordings directly from the phone to the user's own Google Drive using only the drive.file scope (files created by this app). There is no developer server, no sharing with third parties, no ads or analytics. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+  <p><a href="index.html">← 앱 소개</a></p>
+</main>
+</body>
+</html>
